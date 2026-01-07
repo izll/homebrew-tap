@@ -5,23 +5,23 @@
 class Asmgr < Formula
   desc "Terminal UI for managing multiple AI coding assistant CLI sessions"
   homepage "https://github.com/izll/agent-session-manager"
-  version "0.6.1"
+  version "0.6.5"
   license "MIT"
 
   depends_on "tmux"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/izll/agent-session-manager/releases/download/v0.6.1/asmgr_0.6.1_darwin_amd64.tar.gz"
-      sha256 "03c68849421dd67b48a9f5f1c917523ea5105774eb778de9eeca9b1e63433ace"
+      url "https://github.com/izll/agent-session-manager/releases/download/v0.6.5/asmgr_0.6.5_darwin_amd64.tar.gz"
+      sha256 "f2220728cee08235caa34b5db841e77fd67ba9b7e93a876587353c69239b4a99"
 
       def install
         bin.install "asmgr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/izll/agent-session-manager/releases/download/v0.6.1/asmgr_0.6.1_darwin_arm64.tar.gz"
-      sha256 "0f810a01f44d2e11ee78ed78cfaa61ed19c2dfdeff406bb15b7df15772641168"
+      url "https://github.com/izll/agent-session-manager/releases/download/v0.6.5/asmgr_0.6.5_darwin_arm64.tar.gz"
+      sha256 "515fe66616c67527f6dd9426b85ceeda09afb48e7f9f446cf643e5b6e8b134ba"
 
       def install
         bin.install "asmgr"
@@ -31,15 +31,15 @@ class Asmgr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/izll/agent-session-manager/releases/download/v0.6.1/asmgr_0.6.1_linux_amd64.tar.gz"
-      sha256 "c1ca3cbef160e86e65c5b3f31d8d7bf8e880473be2d367eb2d4c27e5d64e85f1"
+      url "https://github.com/izll/agent-session-manager/releases/download/v0.6.5/asmgr_0.6.5_linux_amd64.tar.gz"
+      sha256 "e97ca0f995bb16cefe04c3003109d5eaa3c799831358d1b8ea0dea02838fbb2b"
       def install
         bin.install "asmgr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/izll/agent-session-manager/releases/download/v0.6.1/asmgr_0.6.1_linux_arm64.tar.gz"
-      sha256 "00e80792627ba407457ca6ed5f68c0eb758afa3b6b945cb754c88ebe7ea27845"
+      url "https://github.com/izll/agent-session-manager/releases/download/v0.6.5/asmgr_0.6.5_linux_arm64.tar.gz"
+      sha256 "956c6c389ffbf859283cad6740acd862724e6cfa098c7d4df369b5761bab10c1"
       def install
         bin.install "asmgr"
       end
