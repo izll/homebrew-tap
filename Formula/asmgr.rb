@@ -13,7 +13,7 @@ class Asmgr < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/izll/agent-session-manager/releases/download/v0.7.5/asmgr_0.7.5_darwin_amd64.tar.gz"
-      sha256 "bb381816dc75c73f87c486613f62b67ec905842541db183da27b14c0e43daef3"
+      sha256 "9d53a00b124ed6809629e1a9d76305b3c4b03718199e30a2e9ff3a259aa9ba33"
 
       def install
         bin.install "asmgr"
@@ -21,7 +21,7 @@ class Asmgr < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/izll/agent-session-manager/releases/download/v0.7.5/asmgr_0.7.5_darwin_arm64.tar.gz"
-      sha256 "2046d77d2e3492a0b20de0a6083d5c950a52c1988af93480d1b678099858da9e"
+      sha256 "2fac3403bc514ed06ae35fbc3f62a0470d6a6b61b6f5c163b940c47f7f43957a"
 
       def install
         bin.install "asmgr"
@@ -32,14 +32,14 @@ class Asmgr < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/izll/agent-session-manager/releases/download/v0.7.5/asmgr_0.7.5_linux_amd64.tar.gz"
-      sha256 "b59ee455382c624da24985ea81b4d8984299732c2677c785d9c40cc2a662dcd6"
+      sha256 "1bd8ebc81b77bc0e40d946f7c62467d3bddd06b3d7f24cf0f69d174f74f8ea71"
       def install
         bin.install "asmgr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/izll/agent-session-manager/releases/download/v0.7.5/asmgr_0.7.5_linux_arm64.tar.gz"
-      sha256 "9b76b1ec83122fbf770e0b897b1e6ee4ccaead2348c3891cc9efc7f15331fb06"
+      sha256 "e14ffbe2f98490da7acacc43e599dbce4ba6db3e53c70ec4f5cc509a240a006f"
       def install
         bin.install "asmgr"
       end
