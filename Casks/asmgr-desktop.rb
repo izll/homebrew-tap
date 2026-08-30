@@ -14,7 +14,7 @@ cask "asmgr-desktop" do
   depends_on arch: :arm64
   # Sonoma, not the Go toolchain floor: the bundled PortAudio dylib is built
   # for the release runner, and the app declares that maximum in its plist.
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   # The sessions themselves run in tmux; without it the app starts and can do
   # nothing. Homebrew installs it as part of the cask rather than leaving the
