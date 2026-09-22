@@ -1,6 +1,6 @@
 cask "asmgr-desktop" do
-  version "1.1.7"
-  sha256 "f19f86558c9d55d62b44e5a59662d90cd9b62ab698f051ae76e50b47a6988e98"
+  version "1.1.8"
+  sha256 "d2c856f9e021b7b21821d0bfb5ff52e0bb264bda87a0a1072ad5604f3940339f"
 
   url "https://github.com/izll/agent-session-manager-desktop/releases/download/v#{version}/asmgr-desktop_#{version}_darwin_arm64.tar.gz",
       verified: "github.com/izll/agent-session-manager-desktop/"
